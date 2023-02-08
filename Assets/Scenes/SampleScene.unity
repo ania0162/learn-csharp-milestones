@@ -323,3 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentAge: 18
+  AddedAge: 6
+  Movement: 0.001
+  Bob: Hello, My name is Bob.
+  Method: 1
