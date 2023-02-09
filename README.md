@@ -66,26 +66,26 @@ The Building Blocks of Programming (22–37)
 ## Chapter 3
 Diving into Variables, Types, and Methods (38–64)
 
-- [ ] Update Assets/Scripts/LearningCurve.cs
-	- [ ] Variables
-		- [ ] Use access modifiers to make your variables explicitly `public` and `private`
-		- [ ] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
-		- [ ] Concatenate strings using the `+` operator, and the string interpolation method `$`
-	- [ ] Methods
-		- [ ] Define a simple method with parameters
-		- [ ] Add a return type and return some data from a method
-		- [ ] Use data returned from a method
-- [ ] ✏️ Explain some differences between public and private variables: **??**
+- [x] Update Assets/Scripts/LearningCurve.cs
+	- [x] Variables
+		- [x] Use access modifiers to make your variables explicitly `public` and `private`
+		- [x] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
+		- [x] Concatenate strings using the `+` operator, and the string interpolation method `$`
+	- [x] Methods
+		- [x] Define a simple method with parameters
+		- [x] Add a return type and return some data from a method
+		- [x] Use data returned from a method
+- [x] ✏️ Explain some differences between public and private variables: Public variables are available to any script, meaning that when the script is applied to a game object one can manipulate it. Whilst private, is only accessible through it class, thus not being able to alter it through Unity.
 
 
 ## Chapter 4
 Control Flow and Collection Types (65–93)
 
-- [ ] Update Assets/Scripts/LearningCurve.cs
+- [] Update Assets/Scripts/LearningCurve.cs
 	- [ ] Conditionals
-		- [ ] Write `if`, `else if`, and `else` statements
-		- [ ] Test for `true` and `!true` in a conditional
-		- [ ] Write a nested `if` statement
+		- [x] Write `if`, `else if`, and `else` statements
+		- [x] Test for `true` and `!true` in a conditional
+		- [x] Write a nested `if` statement
 		- [ ] Write a `switch` statement
 	- [ ] Collections
 		- [ ] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **??**
