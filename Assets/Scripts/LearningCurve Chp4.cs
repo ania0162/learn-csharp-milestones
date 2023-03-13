@@ -61,9 +61,22 @@ public class LearningCurveChp4 : MonoBehaviour
         //PrintCharacterAction();
 
         //fall-through cases
-        RollDice();
+        //RollDice();
 
+        //lists
+        //PartyMember();
 
+        //dictionaries
+        //Dictionaries();
+
+        //forloops
+        //FindPartyMember();
+
+        //foreachloops
+        //ItemInvetoryValue();
+
+        //whileloops
+        HealthStatus();
 
     }
 
@@ -133,13 +146,109 @@ public class LearningCurveChp4 : MonoBehaviour
                 break;
             case 20:
                 Debug.Log("Critical Hit, the creature goes down");
-
+                break;
             default:
                 Debug.Log("You completely missed and fell on your face.");
                 break;
 
         }
     }
+
+    // arrays
+    int[] topPlayerScores = new int[3];
+    /*
+     Longhand Initializer : int[] top PlayerScores = new int[] {713,549,984};
+     Shortcut Initializer: int [] topPlayerScores = {712,549,984};
+     */
+
+    //lists
+    //blueprint: List<elementType> name = new List<elementType>() {value1, value2};
+    public void PartyMember()
+    {
+        List<string> QuestPartyMembers = new List<string>()
+            { "Grim the Barbarian",
+            "Merlin the Wise",
+            "Sterling the Knight"
+            };
+        //add to list
+        QuestPartyMembers.Add("Craven the Necromancer");
+        //add at a specific spot
+        QuestPartyMembers.Insert(1, "Tanis the Thief");
+        // remove the required elements: QuestPartyMembers.RemoveAt(0); QuestPartyMembers.Remove("Grim the Barbarian");
+
+        Debug.LogFormat("Party Members: {0}", QuestPartyMembers.Count);
+
+    }
+
+    //dictionaries
+    //blueprint: Dictionary<keyType, valueType> name = new Dictionary<keyType,valueType>();
+    public void Dictionaries()
+    {
+        Dictionary<string, int> ItemInventory = new Dictionary<string, int>()
+        {
+            { "Potion", 5},
+            { "Antidote", 7},
+            { "Aspirin", 1}
+        };
+        Debug.LogFormat("Items: {0}", ItemInventory.Count);
+        //update method: ItemInventory["Potion"] = 10
+        //add items: ItemInventory.Add("Throwing Knife", 3);
+        //remove items: ItemInventory.Remove("Antidote");
+    }
+
+    //for loops
+    public void FindPartyMember()
+    {
+        List<string> QuestPartyMember = new List<string>()
+        { "Frim the Barbarian", "Merlin the Wise", "Sterling the Knight"};
+
+        Debug.LogFormat("Party Members: {0}", QuestPartyMember.Count);
+
+        for (int i = 0; i < QuestPartyMember.Count; i++)
+        {
+            if (QuestPartyMember[i] == "Merlin the Wise")
+            {
+                Debug.Log("Glad you're here Merlin!");
+            }
+            
+            Debug.LogFormat("Index: {0} - {1}", i, QuestPartyMember[i]);
+        }   
+        foreach (string partyMember in QuestPartyMember)
+        {
+            Debug.LogFormat("{0} - Here!", partyMember);
+        };
+
+    }
+
+    //foreach
+    public void ItemInvetoryValue()
+    {
+        Dictionary<string, int> ItemInventory = new Dictionary<string, int>()
+        {
+            { "Potion", 5},
+            { "Antidote", 7},
+            { "Aspirin", 1}
+        };
+
+        foreach(KeyValuePair<string, int> kvp in ItemInventory)
+        {
+            Debug.LogFormat("Item: {0} - {1}g", kvp.Key, kvp.Value);
+        }
+    }
+
+    //whileloops
+    public void HealthStatus()
+    {
+        int PlayerLives = 3;
+        while(PlayerLives > 0)
+        {
+            Debug.Log("Still alive!");
+            PlayerLives--;
+        }
+        Debug.Log("Player KO'd...");
+    }
+    
+
 
     // Update is called once per frame
     void Update()

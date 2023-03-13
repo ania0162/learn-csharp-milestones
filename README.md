@@ -87,15 +87,15 @@ Control Flow and Collection Types (65–93)
 		- [x] Test for `true` and `!true` in a conditional
 		- [x] Write a nested `if` statement
 		- [x] Write a `switch` statement
-	- [ ] Collections
-		- [ ] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **??**
-		- [ ] Write an Array of the type `int[]`
-		- [ ] Write a List of the type `List<string>`
-		- [ ] Write a Dictionary of the type `Dictionary<string, int>`
-	- [ ] Loops
-		- [ ] Use a `for` loop to print a specific index of a `List<string>`
-		- [ ] Use a `foreach` loop to print all indexes of a `List<string>`
-		- [ ] Use a `foreach` loop to print the `KeyValuePair.Key` and `KeyValuePair.Value` of all indexes of a `Dictionary<string, int>`
+	- [x] Collections
+		- [x] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **??**
+		- [x] Write an Array of the type `int[]`
+		- [x] Write a List of the type `List<string>`
+		- [x] Write a Dictionary of the type `Dictionary<string, int>`
+	- [x] Loops
+		- [x] Use a `for` loop to print a specific index of a `List<string>`
+		- [x] Use a `foreach` loop to print all indexes of a `List<string>`
+		- [x] Use a `foreach` loop to print the `KeyValuePair.Key` and `KeyValuePair.Value` of all indexes of a `Dictionary<string, int>`
 
 
 
@@ -103,22 +103,22 @@ Control Flow and Collection Types (65–93)
 Working with Classes, Structs, and OOP (94–119)
 
 - Classes
-	- [ ] ✏️ Explain the difference between reference and value type variables: **??**
-	- [ ] Create Assets/Scripts/Character.cs
-		- [ ] Create a `Character` class
-		- [ ] Create `string` and `int` fields inside the Character class
-		- [ ] Create a `Character()` constructor and populate the above fields with its parameters
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Instantiate two new Character objects `hero` and `heroine` from the `Character` class
-		- [ ] Print out each characters data
-- [ ] Structs
-	- [ ] Update Assets/Scripts/Character.cs
-		- [ ] Add a `Weapon` struct
-		- [ ] Create `string` and `int` fields inside the Weapon struct
-		- [ ] Create a `Weapon()` constructor and populate the above fields with its parameters
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Instantiate two new Weapon objects `huntingBow` and `warBow` from the `Weapon` struct
-		- [ ] Print out each weapons' data
+	- [x] ✏️ Explain the difference between reference and value type variables: Value type holds data within their own memory space, whilst reference types holds an agent that locate to another memory location.
+	- [x] Create Assets/Scripts/Character.cs
+		- [x] Create a `Character` class
+		- [x] Create `string` and `int` fields inside the Character class
+		- [x] Create a `Character()` constructor and populate the above fields with its parameters
+	- [x] Update Assets/Scripts/LearningCurve.cs
+		- [x] Instantiate two new Character objects `hero` and `heroine` from the `Character` class
+		- [x] Print out each characters data
+- [x] Structs
+	- [x] Update Assets/Scripts/Character.cs
+		- [x] Add a `Weapon` struct
+		- [x] Create `string` and `int` fields inside the Weapon struct
+		- [x] Create a `Weapon()` constructor and populate the above fields with its parameters
+	- [x] Update Assets/Scripts/LearningCurve.cs
+		- [x] Instantiate two new Weapon objects `huntingBow` and `warBow` from the `Weapon` struct
+		- [x] Print out each weapons' data
 - Child classes
 	- [ ] Update Assets/Scripts/Character.cs
 		- [ ] Add a `Paladin` child class of `Character`
