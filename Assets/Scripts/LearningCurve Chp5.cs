@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class LearningCurveChp5 : MonoBehaviour
 {
+    public Transform CamTransform;
+    public GameObject DirectionLight;
+    public Transform LightTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +19,8 @@ public class LearningCurveChp5 : MonoBehaviour
 
         hero.PrintStatsInfo();
         hero2.PrintStatsInfo();
-        hero2.Reset();
-        
+        //hero2.Reset();
+
 
         Character heroine = new Character("Agatha");
         heroine.PrintStatsInfo();
@@ -27,6 +32,20 @@ public class LearningCurveChp5 : MonoBehaviour
 
         huntingBow.PrintWeaponStats();
         warBow.PrintWeaponStats();
+
+        Paladin knight = new Paladin("Sir Guklhiem", huntingBow);
+        knight.PrintStatsInfo();
+
+        
+
+        CamTransform = this.GetComponent<Transform>();
+        Debug.Log(CamTransform.localPosition);
+
+        //DirectionLight = GameObject.Find("Directional Light");
+        LightTransform = DirectionLight.GetComponent<Transform>();
+        Debug.Log(LightTransform.localPosition);
+
+        // You can break down the code > Gameobject.Find("Directional Light").GetComponent<Transform>();
 
     }
 

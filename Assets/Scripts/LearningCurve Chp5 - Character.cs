@@ -17,17 +17,30 @@ public class Character
         this.name = name;
     }
 
-    public void PrintStatsInfo()
+    public virtual void PrintStatsInfo()
     {
         Debug.LogFormat("Hero: {0} - {1} EXP", name, exp);
     }
 
-    private void Reset()
-    {
-        this.name = "Not assigned";
-        this.exp = 0;
-    }
+    //private void Reset()
+    //{
+    //    this.name = "Not assigned";
+    //    this.exp = 0;
+    //}
     
 }
 
-public class Paladin: Character
+public class Paladin : Character
+{
+    public Weapon weapon;
+
+    public Paladin(string name, Weapon weapon) : base(name)
+    {
+        this.weapon = weapon;
+    }
+
+    public override void PrintStatsInfo()
+    {
+        Debug.LogFormat("Hero, {0}! Please pick up your {1}!!", name, weapon.name);
+    }
+}
